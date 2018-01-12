@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="facebook_app_id">144875932878768</string>
+    <!-- <string name="fb_login_protocol_scheme">fb987375491383222</string> -->
+    <string name="app_name">safeguard</string>
+    <string name="title_activity_kimera">safeguard</string>
+</resources>

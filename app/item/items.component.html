@@ -22,12 +22,21 @@ You can learn more about NativeScript layouts at https://docs.nativescript.org/u
 These components make use of several CSS class names that are part of the NativeScript
 core theme, such as p-20, btn, h2, and list-group. You can view a full list of the
 class names available for styling your app at https://docs.nativescript.org/ui/theme.
--->
+--> 
 <StackLayout class="page">
-    <ListView [items]="items" class="list-group">
+    <Label text="Anonymous login" textWrap="true"></Label>    
+    <Button class="btn btn-primary btn-active" text="Ano Login" (tap)="anyLogin()"></Button>
+    <TextField hint="Email" [(ngModel)]="user.email"></TextField>
+    <TextField hint="Password" [(ngModel)]="user.password"></TextField>
+    <Button text="Email signup" (tap)="emailSignup()"></Button>
+    
+    <Button text="Email login" (tap)="emailLogin()"></Button>
+    
+    
+    <!-- <ListView [items]="items" class="list-group">
         <ng-template let-item="item">
             <Label [nsRouterLink]="['/item', item.id]" [text]="item.name"
                 class="list-group-item"></Label>
         </ng-template>
-    </ListView>
+    </ListView> -->
 </StackLayout>
