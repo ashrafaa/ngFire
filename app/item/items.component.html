@@ -23,20 +23,28 @@ These components make use of several CSS class names that are part of the Native
 core theme, such as p-20, btn, h2, and list-group. You can view a full list of the
 class names available for styling your app at https://docs.nativescript.org/ui/theme.
 --> 
+<ScrollView>
 <StackLayout class="page">
-    <Label text="Anonymous login" textWrap="true"></Label>    
+    <!-- <Label text="Anonymous login" textWrap="true"></Label>    
     <Button class="btn btn-primary btn-active" text="Ano Login" (tap)="anyLogin()"></Button>
     <TextField hint="Email" [(ngModel)]="user.email"></TextField>
     <TextField hint="Password" [(ngModel)]="user.password"></TextField>
     <Button text="Email signup" (tap)="emailSignup()"></Button>
     
-    <Button text="Email login" (tap)="emailLogin()"></Button>
+    <Button text="Email login" (tap)="emailLogin()"></Button> -->
+    <!-- <Image [src]="picture" style="max-height: 50px;"></Image>
+    
+    <Button text="Take picture" (tap)="takePicture()"></Button>
+    <Button text="Share this!" (tap)="shareThis()"></Button> -->
+    <Button text="Share image" [nsRouterLink]="['sharepic']"></Button>
+    <!-- <router-outlet></router-outlet> -->
     
     
     <!-- <ListView [items]="items" class="list-group">
         <ng-template let-item="item">
             <Label [nsRouterLink]="['/item', item.id]" [text]="item.name"
-                class="list-group-item"></Label>
+            class="list-group-item"></Label>
         </ng-template>
     </ListView> -->
 </StackLayout>
+</ScrollView>
