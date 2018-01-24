@@ -1,6 +1,9 @@
 <StackLayout>
-    <Image [src]="picture" style="max-height: 50px;"></Image>
-    
-    <Button text="Take picture" (tap)="takePicture()"></Button>
-    <Button text="Share this!" (tap)="shareThis()"></Button>
+    <StackLayout>
+        <Image class="img-circle" [src]="picture" height="200" width="200"></Image>
+        
+        <Button text="Take picture" (tap)="takePicture()"></Button>
+        <Button text="Share this!" (tap)="shareThis()"></Button>
+    </StackLayout>
+    <Button text="Screenshot this!" (tap)="screenshotThis()"></Button>
 </StackLayout>

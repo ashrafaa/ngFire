@@ -30,14 +30,9 @@ class names available for styling your app at https://docs.nativescript.org/ui/t
     <TextField hint="Email" [(ngModel)]="user.email"></TextField>
     <TextField hint="Password" [(ngModel)]="user.password"></TextField>
     <Button text="Email signup" (tap)="emailSignup()"></Button>
-    
     <Button text="Email login" (tap)="emailLogin()"></Button> -->
-    <!-- <Image [src]="picture" style="max-height: 50px;"></Image>
-    
-    <Button text="Take picture" (tap)="takePicture()"></Button>
-    <Button text="Share this!" (tap)="shareThis()"></Button> -->
+
     <Button text="Share image" [nsRouterLink]="['sharepic']"></Button>
-    <!-- <router-outlet></router-outlet> -->
     
     
     <!-- <ListView [items]="items" class="list-group">
